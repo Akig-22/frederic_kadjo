@@ -7,12 +7,25 @@
     <title>Frédéric Gikalex Kadjo | Développeur IA</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .page {
+            display: none;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        .smooth {
+            transition: all 0.3s ease;
+        }
+    </style>
 </head>
 
-<body class="bg-slate-50 text-slate-800">
+<body class="bg-gray-50 text-gray-800">
 
-    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur shadow-sm">
-        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between">
+    <nav class="bg-white shadow-md fixed w-full top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between">
             <span class="font-bold text-blue-600">FGK.IA</span>
             <div class="space-x-6 text-sm font-bold">
                 <a href="projects.html" class="hover:text-blue-600">PROJETS</a>
