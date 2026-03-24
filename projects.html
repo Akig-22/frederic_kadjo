@@ -1,53 +1,150 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mes Projets | Frédéric Kadjo</title>
+    <title>Frédéric Kadjo - Portfolio Projets</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .page {
+            display: none;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        .smooth {
+            transition: all 0.3s ease;
+        }
+    </style>
 </head>
-<body class="bg-slate-50">
-    <nav class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-black text-indigo-600">FK.dev</a>
-            <div class="flex space-x-8 font-medium">
-                <a href="index.html" class="hover:text-indigo-600 transition">Accueil</a>
-                <a href="about.html" class="hover:text-indigo-600 transition">Parcours</a>
-                <a href="projects.html" class="text-indigo-600">Projets</a>
-                <a href="contact.html" class="hover:text-indigo-600 transition">Contact</a>
+
+<body class="bg-gray-50 text-gray-800">
+    <nav class="bg-white shadow-md fixed w-full top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-blue-600">FK.dev</div>
+                <div class="space-x-6">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 smooth font-medium">Accueil</a>
+                    <a href="about.html" class="text-gray-700 hover:text-blue-600 smooth font-medium">Parcours</a>
+                    <a href="projects.html" class="text-blue-600 font-bold smooth">Projets &
+                        Expériences</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-blue-600 smooth font-medium">Contact</a>
+                </div>
             </div>
         </div>
     </nav>
 
-    <main class="container mx-auto px-6 py-12">
-        <h2 class="text-4xl font-black text-center mb-16 uppercase">Réalisations Techniques</h2>
+    <div id="projects" class="page active">
+        <div class="min-h-screen bg-gray-50 pt-24 pb-12">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-extrabold text-center mb-4 uppercase tracking-tighter text-gray-900">Portfolio
+                    Technique</h2>
+                <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                    Développement d'outils basés sur l'IA, automatisation et administration système.
+                </p>
 
-        <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <div class="group bg-white rounded-3xl p-8 border border-slate-100 hover:shadow-2xl transition duration-300">
-                <div class="w-12 h-12 bg-indigo-50 rounded-xl flex items-center justify-center text-indigo-600 mb-6 group-hover:bg-indigo-600 group-hover:text-white transition">
-                    <i class="fa-solid fa-robot text-xl"></i>
-                </div>
-                <h3 class="text-2xl font-bold mb-3">Chatbot IA Contextuel</h3>
-                <p class="text-slate-600 mb-6 text-sm">Agent conversationnel basé sur FastAPI et Ollama. Analyse de PDF et streaming de réponses en temps réel.</p>
-                <div class="flex gap-2">
-                    <span class="text-[10px] font-black bg-slate-100 px-2 py-1 rounded">PYTHON</span>
-                    <span class="text-[10px] font-black bg-slate-100 px-2 py-1 rounded">LLM</span>
-                </div>
-            </div>
+                <div class="max-w-5xl mx-auto space-y-10">
 
-            <div class="group bg-white rounded-3xl p-8 border border-slate-100 hover:shadow-2xl transition duration-300">
-                <div class="w-12 h-12 bg-green-50 rounded-xl flex items-center justify-center text-green-600 mb-6 group-hover:bg-green-600 group-hover:text-white transition">
-                    <i class="fa-solid fa-microphone text-xl"></i>
-                </div>
-                <h3 class="text-2xl font-bold mb-3">Transcripteur Vocal</h3>
-                <p class="text-slate-600 mb-6 text-sm">Application cli convertissant la parole en texte via SpeechRecognition et PyAudio.</p>
-                <div class="flex gap-2">
-                    <span class="text-[10px] font-black bg-slate-100 px-2 py-1 rounded">NLP</span>
-                    <span class="text-[10px] font-black bg-slate-100 px-2 py-1 rounded">CLI</span>
+                    <div
+                        class="bg-white rounded-2xl shadow-xl p-8 border-l-8 border-blue-600 hover:shadow-2xl transition duration-300">
+                        <div class="flex flex-col md:flex-row md:items-start justify-between mb-6">
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-900">Stage – Développeur Web & IA</h3>
+                                <p class="text-blue-600 font-semibold text-lg flex items-center gap-2">
+                                    <i class="fa-solid fa-building"></i> TopOnePosition, Toulouse
+                                </p>
+                            </div>
+                            <span
+                                class="mt-2 md:mt-0 bg-blue-100 text-blue-800 px-4 py-1 rounded-full text-sm font-bold shadow-sm">Janvier
+                                - Février 2026</span>
+                        </div>
+                        <ul class="text-gray-700 space-y-3 mb-6">
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-green-500 mt-1"></i>
+                                <span><strong>Automatisation IA :</strong> Publication d'articles WordPress avec contenu
+                                    et images générés par IA.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-green-500 mt-1"></i>
+                                <span><strong>Optimisation SEO :</strong> Restructuration technique pour améliorer le
+                                    référencement naturel.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-green-500 mt-1"></i>
+                                <span><strong>Refonte Web :</strong> Participation à la création complète d'un site pour
+                                    un cabinet de chirurgie.</span>
+                            </li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="bg-gray-100 text-gray-700 px-3 py-1 rounded-lg text-xs font-bold uppercase">OpenAI
+                                API</span>
+                            <span
+                                class="bg-gray-100 text-gray-700 px-3 py-1 rounded-lg text-xs font-bold uppercase">WordPress</span>
+                            <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-lg text-xs font-bold uppercase">SEO
+                                Technique</span>
+                            <span
+                                class="bg-gray-100 text-gray-700 px-3 py-1 rounded-lg text-xs font-bold uppercase">Python</span>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white rounded-2xl shadow-lg p-8 border border-gray-100 hover:shadow-2xl transition duration-300">
+                        <div class="flex flex-col md:flex-row md:items-start justify-between mb-6">
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-900">Chatbot IA Conversationnel</h3>
+                                <p class="text-purple-600 font-semibold">Projet Personnel - Spécialisation LLM</p>
+                            </div>
+                            <span
+                                class="mt-2 md:mt-0 bg-purple-100 text-purple-800 px-4 py-1 rounded-full text-sm font-bold">Mars
+                                2026</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Développement d'un agent conversationnel capable d'analyser des fichiers PDF et de maintenir
+                            une mémoire de conversation.
+                        </p>
+                        <ul class="text-gray-700 space-y-2 mb-6 text-sm">
+                            <li>• Intégration de <strong>Ollama (modèle phi3)</strong> via <strong>FastAPI</strong>.
+                            </li>
+                            <li>• Streaming de réponses en temps réel (Server-Sent Events).</li>
+                            <li>• Gestion de la persistance des données en <strong>JSON</strong>.</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="bg-indigo-50 text-indigo-700 px-3 py-1 rounded-lg text-xs font-bold">FASTAPI</span>
+                            <span
+                                class="bg-indigo-50 text-indigo-700 px-3 py-1 rounded-lg text-xs font-bold">OLLAMA</span>
+                            <span class="bg-indigo-50 text-indigo-700 px-3 py-1 rounded-lg text-xs font-bold">NLP</span>
+                            <span class="bg-indigo-50 text-indigo-700 px-3 py-1 rounded-lg text-xs font-bold">TAILWIND
+                                CSS</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-100/50 rounded-2xl p-8 border border-gray-200">
+                        <div class="flex flex-col md:items-start justify-between mb-4">
+                            <h3 class="text-xl font-bold text-gray-700">Stage – Administration Système & Réseau</h3>
+                            <p class="text-gray-500 italic">Semper Connect | Mai-Juin 2025</p>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-4">
+                            Maintenance d'un cluster <strong>Proxmox</strong> et automatisation de sauvegardes via
+                            <strong>Bash</strong> (rdiff-backup), réduisant le temps de gestion de 40%.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-[10px] font-bold text-gray-400 uppercase">NGINX</span>
+                            <span class="text-[10px] font-bold text-gray-400 uppercase">VLAN</span>
+                            <span class="text-[10px] font-bold text-gray-400 uppercase">Linux</span>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
-    </main>
+    </div>
+
 </body>
+
 </html>
