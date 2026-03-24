@@ -28,13 +28,10 @@
             <div class="flex justify-between items-center">
                 <div class="text-2xl font-bold text-blue-600">FK.dev</div>
                 <div class="space-x-6">
-                    <button onclick="showPage('index.html')"
-                        class="text-gray-700 hover:text-blue-600 smooth font-medium">Accueil</button>
-                    <button onclick="showPage('about.html')"
-                        class="text-gray-700 hover:text-blue-600 smooth font-medium">Parcours</button>
-                    <button onclick="showPage('projects.html')"
-                        class="text-gray-700 hover:text-blue-600 smooth font-medium">Projets</button>
-                    <button onclick="showPage('contact.html')" class="text-blue-600 font-bold smooth">Contact</button>
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 smooth font-medium">Accueil</a>
+                    <a href="about.html" class="text-gray-700 hover:text-blue-600 smooth font-medium">Parcours</a>
+                    <a href="projects.html" class="text-gray-700 hover:text-blue-600 smooth font-medium">Projets</a>
+                    <a href="contact.html" class="text-blue-600 font-bold smooth">Contact</a>
                 </div>
             </div>
         </div>
@@ -125,16 +122,6 @@
         </div>
     </div>
 
-    <script>
-        function showPage(pageId) {
-            document.querySelectorAll('.page').forEach(page => {
-                page.classList.remove('active');
-            });
-            const selected = document.getElementById(pageId);
-            if (selected) selected.classList.add('active');
-            window.scrollTo(0, 0);
-        }
-    </script>
 </body>
 
 </html>
