@@ -1,70 +1,54 @@
 <!DOCTYPE html>
-<html lang="fr" class="scroll-smooth">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frédéric Gikalex Kadjo | Développeur IA</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        .page {
-            display: none;
-        }
-
-        .page.active {
-            display: block;
-        }
-
-        .smooth {
-            transition: all 0.3s ease;
-        }
-    </style>
+    <title>Frederic Gikalex Kadjo – Développeur IA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-gray-50 text-gray-800">
-
-    <nav class="bg-white shadow-md fixed w-full top-0 z-50">
-        <div class="container mx-auto px-6 py-4 flex justify-between">
-            <span class="font-bold text-blue-600">FGK</span>
-            <div class="space-x-6 text-sm font-bold">
-                <a href="index.html" class="hover:text-blue-600">ACCUEIL</a>
-                <a href="projects.html" class="hover:text-blue-600">PROJETS</a>
-                <a href="about.html" class="hover:text-blue-600">PARCOURS</a>
-                <a href="contact.html" class="hover:text-blue-600">CONTACT</a>
-            </div>
-        </div>
+<body>
+    <nav>
+        <a href="index.html" class="nav-logo">FGK</a>
+        <ul class="nav-links">
+            <li><a href="index.html" style="color:var(--accent)">Accueil</a></li>
+            <li><a href="about.html">Parcours</a></li>
+            <li><a href="projects.html">Projets</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
 
-    <section class="pt-32 pb-20 px-6 text-center">
-        <h1 class="text-4xl font-black mb-4 uppercase">Frédéric Gikalex Kadjo</h1>
-        <p class="text-xl text-blue-600 font-bold mb-8">Développeur Python / IA | Étudiant EPSI Toulouse</p>
-        <div class="flex justify-center gap-4">
-            <a href="cv-frederic-kadjo.pdf" download
-                class="bg-slate-900 text-white px-8 py-3 rounded-full font-bold hover:scale-105 transition">
-                TÉLÉCHARGER CV (PDF)
-            </a>
-        </div>
-    </section>
-
-    <section id="projets" class="max-w-5xl mx-auto px-6 py-10">
-        <h2 class="text-2xl font-black mb-8 border-b-4 border-blue-600 inline-block">MES RÉALISATIONS</h2>
-        <div class="grid md:grid-cols-2 gap-6">
-            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
-                <h3 class="font-bold text-lg mb-2">Chatbot IA (FastAPI & Ollama)</h3>
-                <p class="text-sm text-slate-600 mb-4">Analyse de PDF et streaming de réponses en temps réel avec le
-                    modèle phi3.</p>
-                <a href="https://github.com/Frédéric-Kadjo/chatbot-ia"
-                    class="text-blue-600 font-bold text-xs underline">CODE SOURCE GITHUB</a>
+    <section id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-grid">
+            <div class="hero-text">
+                <div class="hero-tag">Disponible — Alternance Sept. 2026</div>
+                <h1>Frederic<br><span>Gikalex Kadjo</span></h1>
+                <p class="hero-sub">Étudiant en 2e année à l'EPSI Toulouse. Je construis des outils IA concrets —
+                    chatbots, automatisation, traitement du langage.</p>
+                <div class="hero-btns">
+                    <a href="cv-frederic-kadjo.pdf" download class="btn btn-primary">↓ Télécharger CV</a>
+                    <a href="projects.html" class="btn btn-outline">Voir mes projets →</a>
+                </div>
             </div>
-            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
-                <h3 class="font-bold text-lg mb-2">Automatisation WordPress & IA</h3>
-                <p class="text-sm text-slate-600 mb-4">Stage chez TopOnePosition : génération d'articles et d'images par
-                    IA pour le SEO.</p>
+            <div class="hero-photo">
+                <div class="photo-wrap">
+                    <div class="photo-ring"></div>
+                    <div class="photo-inner">
+                        <img src="photo.jpg" alt="Frederic Gikalex Kadjo">
+                    </div>
+                    <div class="hero-badge"><strong>2</strong> projets IA livrés</div>
+                </div>
             </div>
         </div>
     </section>
 
+    <footer>
+        <p>© 2026 Frederic Gikalex Kadjo — Développeur IA 🤖</p>
+    </footer>
 </body>
 
 </html>
