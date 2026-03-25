@@ -22,56 +22,121 @@
     </nav>
 
     <section class="content-section">
-        <div class="section-label">À propos</div>
-        <h2>Mon Parcours & Formation</h2>
+        <div class="section-label">A propos</div>
+        <h2>Profil, competences et experiences</h2>
 
         <div class="about-grid">
             <div class="about-text">
-                <p>Étudiant en 2e année à l'<strong>EPSI Toulouse</strong>, je me spécialise dans le développement et
-                    l'IA. Mon objectif est d'allier technique et utilité réelle.</p>
+                <div class="project-card" style="margin-bottom: 1.5rem;">
+                    <div class="skill-group-title">Profil</div>
+                    <p>
+                        Actuellement en formation dans le domaine de l'informatique, je recherche une alternance d'un
+                        an en developpement en intelligence artificielle pour ma troisieme annee.
+                    </p>
+                    <p>
+                        Passionne par les technologies numeriques, notamment l'IA, je suis une personne curieuse,
+                        rigoureuse et motivee, toujours prete a approfondir mes competences et a relever de nouveaux
+                        defis techniques.
+                    </p>
+                </div>
 
-                <h3 style="color:var(--accent); margin: 2rem 0 1rem;">🛠️ Expérience Professionnelle</h3>
+                <div class="project-card" style="margin-bottom: 1.5rem;">
+                    <div class="skill-group-title">Competences techniques</div>
+
+                    <p style="margin-bottom: 0.8rem; color: var(--text);">Langages de programmation</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Bash</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">Linux</span>
+                    </div>
+
+                    <p style="margin-bottom: 0.8rem; color: var(--text);">IA / Machine Learning</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">LLM</span>
+                        <span class="skill-tag">NLP</span>
+                    </div>
+
+                    <p style="margin-bottom: 0.8rem; color: var(--text);">Outils</p>
+                    <div class="skill-tags" style="margin-bottom: 0;">
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">WordPress</span>
+                        <span class="skill-tag">WAMP</span>
+                        <span class="skill-tag">MySQL</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="skill-group-title">Qualites</div>
+                    <div class="skill-tags" style="margin-bottom: 0;">
+                        <span class="skill-tag">Serieux</span>
+                        <span class="skill-tag">Adaptabilite</span>
+                        <span class="skill-tag">Autonome</span>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="skill-group-title" style="margin-bottom: 1rem;">Experiences professionnelles</div>
+
                 <div class="timeline">
                     <div class="timeline-item">
-                        <div class="timeline-date">Mai - Juin 2025</div>
+                        <div class="timeline-date">Janvier - Fevrier 2026</div>
                         <div class="timeline-line">
                             <div class="timeline-dot"></div>
                             <div class="timeline-connector"></div>
                         </div>
-                        <div class="timeline-content">
-                            <h3>Admin Système & Réseaux (Stage)</h3>
-                            <p class="timeline-company">Semper Connect</p>
-                            <ul style="font-size: 0.85rem; color: var(--muted); padding-left: 1rem;">
-                                <li>Automatisation de sauvegardes (Scripts Bash).</li>
-                                <li>Gestion cluster Proxmox & Linux.</li>
-                                <li>Config NGINX, VLAN et téléphonie IP.</li>
+                        <div class="timeline-content project-card" style="padding: 1.5rem;">
+                            <h3 style="margin-bottom: 0.4rem;">Stage Developpement Web</h3>
+                            <p class="timeline-company" style="color: var(--accent); margin-bottom: 0.8rem;">
+                                TopOnePosition - Toulouse</p>
+                            <ul style="font-size: 0.9rem; color: var(--muted); padding-left: 1.2rem;">
+                                <li>Publication automatisee d'articles sur plusieurs sites WordPress avec contenu genere
+                                    par IA .</li>
+                                <li>Generation et integration d'images par IA dans les articles, pour l'image a la une
+                                    et les visuels du contenu.</li>
+                                <li>Participation a la refonte complete d'un site de chirurgie esthetique avec choix du
+                                    template et restructuration des pages.</li>
+                                <li>Mise en place d'un environnement de developpement local avec WAMP et gestion de la
+                                    base de donnees MySQL.</li>
+                                <li>Integration de produits Etsy sur un site web .</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">Mai - Juin 2025<br>(6 semaines)</div>
+                        <div class="timeline-line">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-content project-card" style="padding: 1.5rem;">
+                            <h3 style="margin-bottom: 0.4rem;">Stage Administration Systeme & Reseaux</h3>
+                            <p class="timeline-company" style="color: var(--accent); margin-bottom: 0.8rem;">
+                                SemperConnect - Toulouse</p>
+                            <ul style="font-size: 0.9rem; color: var(--muted); padding-left: 1.2rem;">
+                                <li>Automatisation des sauvegardes de donnees a l'aide de scripts Bash.</li>
+                                <li>Surveillance et optimisation de la performance d'un cluster Proxmox.</li>
+                                <li>Deploiement et configuration d'outils serveurs : NGINX, proxy, VLAN et telephonie IP
+                                    sous Linux.</li>
+                                <li>Documentation des procedures internes et amelioration des processus.</li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
-                <h3 style="color:var(--accent); margin: 2rem 0 1rem;">🎓 Formation Académique</h3>
-                <p style="font-size: 0.9rem;"><strong>BTS Services Informatiques aux Organisations</strong><br>EPSI
-                    Toulouse – Balma (2024 - Présent)</p>
-            </div>
-
-            <div class="skills-grid">
-                <div class="skill-group-title">Langages Maîtrisés</div>
-                <div class="skill-tags">
-                    <span class="skill-tag">Python</span><span class="skill-tag">JavaScript</span><span
-                        class="skill-tag">PHP</span>
-                    <span class="skill-tag">HTML/CSS</span><span class="skill-tag">SQL</span><span
-                        class="skill-tag">Bash</span>
-                </div>
-
-                <h3 style="color:var(--accent); margin: 2rem 0 1rem;">📚 Projets Études</h3>
-                <div class="project-card" style="padding: 1rem; margin-bottom: 1rem;">
-                    <h4 style="font-size: 0.9rem;">Pharmanalytic</h4>
-                    <p style="font-size: 0.75rem; color: var(--muted);">Site vitrine PHP/SQL pour PME.</p>
-                </div>
-                <div class="project-card" style="padding: 1rem;">
-                    <h4 style="font-size: 0.9rem;">Battle Game Python</h4>
-                    <p style="font-size: 0.75rem; color: var(--muted);">Logique POO et algorithmes de combat.</p>
+                <div class="project-card" style="margin-top: 1rem;">
+                    <div class="skill-group-title">Formation</div>
+                    <p style="color: var(--muted); margin-bottom: 0;">
+                        Actuellement en formation dans le domaine de l'informatique avec une orientation vers le
+                        developpement et l'intelligence artificielle pour la Troisième année.
+                    </p>
                 </div>
             </div>
         </div>
