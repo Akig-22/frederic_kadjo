@@ -251,6 +251,7 @@ h1 span {
     position: relative;
     width: 320px;
     height: 320px;
+    animation: spin 14s linear infinite;
 }
 
 .photo-ring {
