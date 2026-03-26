@@ -254,12 +254,22 @@ h1 span {
     animation: spin 14s linear infinite;
 }
 
+.photo-wrap:hover,
+.photo-wrap:active {
+    animation-play-state: paused;
+}
+
 .photo-ring {
     position: absolute;
     inset: -3px;
     border-radius: 50%;
     background: conic-gradient(var(--accent) 0deg, transparent 180deg, var(--accent) 360deg);
     animation: spin 8s linear infinite;
+}
+
+.photo-wrap:hover .photo-ring,
+.photo-wrap:active .photo-ring {
+    animation-play-state: paused;
 }
 
 .photo-inner {
